@@ -1,0 +1,151 @@
+/* Layouts */
+.admin-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--bg-sidebar);
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main-content {
+  flex: 1;
+  padding: var(--space-6);
+  overflow-y: auto;
+}
+
+/* Cards */
+.card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition);
+  font-size: 0.875rem;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: var(--danger);
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #dc2626;
+}
+
+/* Forms */
+.form-group {
+  margin-bottom: var(--space-4);
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: var(--space-2);
+  color: var(--text-main);
+}
+
+.form-control {
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  transition: var(--transition);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+/* Tables */
+.table-container {
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  background-color: var(--bg-card);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th, .table td {
+  padding: var(--space-4);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.table th {
+  background-color: #f8fafc;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.table tr:hover td {
+  background-color: #f8fafc;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.badge-success { background-color: #d1fae5; color: #065f46; }
+.badge-danger { background-color: #fee2e2; color: #991b1b; }
+.badge-warning { background-color: #fef3c7; color: #92400e; }
